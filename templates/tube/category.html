@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+<div class="main">
+	<!-- Category Title/Description here. -->
+	<h1>{{ c.name }}</h1>
+	{{ c.description }}
+	<br /><br />
+
+	<!-- Posts here-->
+	<ul>
+		{% for p in posts %}
+		<div class="title"><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></div>
+		<ul>
+			<div class="created_at">{{ p.created_at|date:"D d M Y" }} - </div>
+			<iframe class="youtube-player" type="text/html" width="120" 
+				height="90" src="{{ p.tube }}" frameborder="0">
+			</iframe>
+			<div class="story">{{ p.story|truncatewords:20 }}</div>
+			<hr />
+			<br /><br />
+		</ul>
+		{% endfor %}
+	</ul>
+{% endblock %}

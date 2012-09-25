@@ -1,0 +1,72 @@
+Things to Fix. 
+
+
+Backend: 
+
+- Add <Continue to link> like this <good version> p4
+
+
+
+- Commenting captcha p1
+
+
+- Fix URL auto add and auto truncating fix (tube: no hack) p0
+- Fix Pagination..I kind of like this <good version> p0
+- Most watched videos p0
+- more details <link> p0
+
+- Most watched or Common videos p0
+
+
+- Uploads p0ba
+- uploads to file platforms p1
+
+- Feedback  P0
+- Feedback (I suggest you ** <>) p0
+- Contact us +capcha
+
+
+- Error logging App P0
+
+
+- Search feature p0
+
+
+Social: 
+- Share button per page. 
+- Facebook commenting
+- Google+ commenting
+- Feeds+
+
+
+
+
+
+Databases: 
+- Caching p0
+- Indexing p0
+
+
+
+Design: UI 
+
+- Logo p0
+- Design Front p0
+- Lines blog like p0
+- Text font blue highlight p0
+
+
+
+
+Others: 
+- Google Analytics p1
+- Youtube Channel + partner fixes p1
+- Google Adsense p1
+
+
+
+
+Deployment: 
+- Heroku fixes P0
+- File issues p0
+

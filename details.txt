@@ -1,0 +1,76 @@
+#__Author__ = '@ngamita'
+#__Email__ = 'ngamita@gmail.com'
+# 
+
+## Doc to add Project specifics and updates, as a notepad. $$
+#
+#
+##### Databases ###### 
+# start off with MySQL 
+# dbname: batubedb
+# pass: batube
+# locahost: localhost
+#
+#- -----------Tables - --------------
+#1.Categories
+#2. Posts
+#3. Comments
+#
+#
+#etc 
+#
+#
+#- ------------Relations -  - ------------------
+#
+#
+#
+#
+#
+## Templates ### /templates
+#
+#-- base.html 
+#Acts as the backbone off all templates, plays with the whole Django inheritance shit. 
+#
+#-- main.html (@amos to Fix design and this is the file)
+#This will for now act as the main aread where content shall be held.
+#AI: Please note the “padder”. I’m doing this to accommodate IE 6’s box model issue
+
+#
+#
+#-- index.html 
+#Data added so far. 
+#
+#
+#
+#---- css --- css.css file /static
+#Adding css to render main pages. 
+#
+#
+#Models: 
+#--- Categories (Post/Categories * to *)
+#	name
+#	created
+#
+#
+#
+#---- Posts (post / comments 1 to * ) (post / categories * to * )
+#	title
+#	text content
+#	tube link
+#	slug
+#	created date
+#	**Author
+#	is_published (dafault = False)
+#
+#
+#
+#- ---- Comments (post / comments 1 to * )
+#	Name
+#	email
+#	text content
+#	Post related to content
+#	created date
+
+
+
+

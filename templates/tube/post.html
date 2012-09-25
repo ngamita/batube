@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+	<div class="post_content">
+	<h1>{{ p.title }}</h1>
+	<br/ ><br />
+	<iframe class="youtube-player" type="text/html" width="640"
+		height="385" src="{{ p.tube }}" frameborder="0">
+	</iframe>
+
+	<p>{{ p.story }}</p>
+	<br /><br />
+	</div>
+
+
+	{% if p.comment_set.all %}
+	<h2>Comments</h2>
+	<div class="comments">
+		{% for comment in p.comment_set.all %}
+		<span>
+			{{ comment.name }} said on {{comment.created_at|date:"D d M Y"}}
+		</span>
+		<p>
+			{{ comment.text }}
+		</p>
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	<br />
+	<h2>Add Comment</h2>
+
+	<form action="" method="POST">
+		{% csrf_token %}
+		<table>
+			{{ comment_form.as_table }}
+		</table>
+		<input type="submit" name="submit" value="Submit">
+	</form>
+
+
+{% endblock %}
+
